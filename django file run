@@ -1,1 +1,11 @@
-GitHub.com/pranavkeepway/HelpSlip
+
+
+
+python3 -m venv env
+source env/bin/activate 
+pip install django==2.1
+django-admin startproject myproj
+cd myproj
+python3 manage.py migrate
+python3 manage.py startapp myapp
+python3 manage.py runserver
